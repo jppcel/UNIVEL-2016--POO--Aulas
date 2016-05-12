@@ -1,0 +1,8 @@
+package me.polles;
+
+public class SerializadorException extends Exception {
+
+	
+	
+	
+}

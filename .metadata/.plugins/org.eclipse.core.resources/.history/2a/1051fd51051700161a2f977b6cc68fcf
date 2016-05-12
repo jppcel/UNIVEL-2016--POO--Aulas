@@ -1,0 +1,7 @@
+package me.polles;
+
+public interface Serializador<T> {
+	
+	
+
+}

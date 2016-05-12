@@ -1,0 +1,17 @@
+package me.polles;
+
+public class SerializadorCliente implements Serializador<Cliente> {
+
+	@Override
+	public void gravar(Cliente t, File file) throws SerializadorException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Cliente ler(File file) throws SerializadorException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

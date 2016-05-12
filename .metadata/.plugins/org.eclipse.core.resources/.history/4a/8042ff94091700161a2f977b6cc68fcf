@@ -1,0 +1,11 @@
+package me.polles;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class SerializadorException extends Exception {
+
+	
+	
+	
+}

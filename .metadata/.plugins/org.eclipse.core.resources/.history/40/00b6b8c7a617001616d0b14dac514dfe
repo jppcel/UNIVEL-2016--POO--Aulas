@@ -1,0 +1,17 @@
+package me.polles;
+import java.io.Serializable;
+
+public class SerializadorException extends Exception {
+
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8158036941627626364L;
+
+	public void SerializadorException(e){
+		
+	}
+	
+	
+}

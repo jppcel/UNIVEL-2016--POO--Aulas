@@ -1,0 +1,28 @@
+package me.polles;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+public class SerializadorCliente implements Serializador<Cliente> {
+
+	@Override
+	public void gravar(Cliente t, File file) throws SerializadorException {
+		// TODO Auto-generated method stub
+		try(FileOutputStream fos = new FileOutputStream(file);
+				ObjectOutputStream oos = new ObjectOutputStream(fos)){
+			oos.writeObject(t);
+			
+			oos.close();
+			fos.close();
+		}catch(SerializadorException e){
+			
+		}
+	}
+
+	@Override
+	public Cliente ler(File file) throws SerializadorException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,12 @@
+package me.polles;
+import java.io.Serializable;
+
+public class SerializadorException extends Exception {
+
+
+	public void SerializadorException(e){
+		
+	}
+	
+	
+}

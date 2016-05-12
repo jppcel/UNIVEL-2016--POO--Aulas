@@ -1,0 +1,9 @@
+package me.polles;
+
+public class SerializadorException extends Exception {
+
+	public SerializadorException(String msg) throw FileNotFoundException{
+		
+	}
+	
+}
