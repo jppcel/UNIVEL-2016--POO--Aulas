@@ -1,0 +1,30 @@
+package me.polles;
+
+import java.io.StringWriter;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Marshaller;
+import javax.xml.transform.stream.StreamResult;
+
+public class TesteGravacao {
+
+	public static void main(String[] args){
+		
+		Cliente c = new Cliente();
+		
+		c.setId(1);
+		c.setNome("Hugo");
+		
+		StringWriter out = new StringWriter();
+		JAXBContext context = null;
+		try{
+			context = JAXBContext.newInstance(c.getClass());
+			Marshaller marshaller = context.createMarshaller();
+			marshaller.setProperty(
+					javax.xml.bind.Marshaller.JAXB_FORMATTED_OUTPUT,
+					Boolean.TRUE
+			);
+			marshaller.marshal(c, new StreamResult(out));
+		}
+	}
+}

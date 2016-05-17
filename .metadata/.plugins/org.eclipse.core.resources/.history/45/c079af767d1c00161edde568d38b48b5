@@ -1,0 +1,31 @@
+package me.polles;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class TesteLeitura {
+	
+	public static void main(String[] args){
+		String xml = null;
+		try {
+			FileReader fr = new FileReader("arq.xml");
+			BufferedReader br = new BufferedReader(fr);
+			
+			StringBuilder sb = new StringBuilder();
+			String line = null;
+			while((line = br.readLine()) != null){
+				sb.append(line).append("\n");
+			}
+			xml = sb.toString();
+			
+			br.close();
+			fr.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+}

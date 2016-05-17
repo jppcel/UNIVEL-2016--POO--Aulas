@@ -4,7 +4,7 @@ import java.io.File;
 
 public class TesteLeitura {
 	public static void main(String[] args){
-		SerializadorCliente<Cliente> SC = new SerializadorCliente<Cliente>();
+		SerializadorI<Cliente> SC = new SerializadorI<Cliente>();
 		
 		Cliente c;
 		

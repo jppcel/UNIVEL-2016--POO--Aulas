@@ -1,0 +1,19 @@
+package me.polles;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class TesteLeitura {
+	
+	public static void main(String[] args){
+		try {
+			FileReader fr = new FileReader("arq.xml");
+			Cliente c = (Cliente) fr.getClass();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+}
