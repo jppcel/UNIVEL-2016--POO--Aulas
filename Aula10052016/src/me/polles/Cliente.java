@@ -3,11 +3,12 @@ package me.polles;
 import java.io.Serializable;
 
 public class Cliente implements Serializable {
-	
+
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 2178085449793633281L;
+	private static final long serialVersionUID = 00000003633281L;
+	
 	private int id;
 	private String nome;
 	
