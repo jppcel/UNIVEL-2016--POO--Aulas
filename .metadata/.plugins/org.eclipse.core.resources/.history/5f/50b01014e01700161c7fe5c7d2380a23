@@ -1,9 +1,0 @@
-package me.polles;
-
-public class TesteLeitura {
-	
-	public static void main(String[] args){
-		FileReader fr = new FileReader("arq.xml");
-	}
-	
-}
